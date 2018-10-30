@@ -22,7 +22,7 @@
     "package-ci": "yarn postinstall && yarn build && electron-builder --publish always",
     "package-linux": "yarn build && electron-builder build --linux",
     "package-win": "yarn build && electron-builder build --win --x64",
-    "postinstall": "node -r babel-register internals/scripts/CheckNativeDep.js && yarn flow-typed && yarn build-dll && electron-builder install-app-deps package.json",
+    "postinstall": "node -r babel-register internals/scripts/CheckNativeDep.js && yarn flow-typed && yarn build-dll && electron-builder install-app-deps package.json && electron-build-env neon build @amilajack/neon-hello",
     "postlint-fix": "prettier --ignore-path .eslintignore --single-quote --write '**/*.{*{js,jsx,json},babelrc,eslintrc,prettierrc,stylelintrc}'",
     "postlint-styles-fix": "prettier --ignore-path .eslintignore --single-quote --write '**/*.{css,scss}'",
     "precommit": "lint-staged",
@@ -179,6 +179,7 @@
     "css-loader": "^1.0.0",
     "detect-port": "^1.2.3",
     "electron": "^2.0.6",
+    "electron-build-env": "^0.2.0",
     "electron-builder": "^20.26.0",
     "electron-devtools-installer": "^2.2.4",
     "electron-rebuild": "^1.8.2",
@@ -208,6 +209,8 @@
     "jest": "^23.4.2",
     "lint-staged": "^7.2.0",
     "mini-css-extract-plugin": "^0.4.1",
+    "neon-cli": "^0.2.0",
+    "node-loader": "^0.6.0",
     "node-sass": "^4.9.2",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "prettier": "^1.14.3",
@@ -235,6 +238,7 @@
     "yarn": "^1.9.2"
   },
   "dependencies": {
+    "@amilajack/neon-hello": "^0.1.1",
     "@fortawesome/fontawesome-free": "^5.2.0",
     "devtron": "^1.4.0",
     "electron-debug": "^2.0.0",
