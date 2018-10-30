@@ -212,7 +212,7 @@
     "neon-cli": "^0.2.0",
     "node-loader": "^0.6.0",
     "node-sass": "^4.9.2",
-    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "prettier": "^1.14.3",
     "react-test-renderer": "^16.4.1",
     "redux-logger": "^3.0.6",
