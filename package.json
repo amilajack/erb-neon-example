@@ -208,7 +208,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.4.2",
     "lint-staged": "^7.3.0",
-    "mini-css-extract-plugin": "^0.4.1",
+    "mini-css-extract-plugin": "^0.4.5",
     "neon-cli": "^0.2.0",
     "node-loader": "^0.6.0",
     "node-sass": "^4.9.2",
